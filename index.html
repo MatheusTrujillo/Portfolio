@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/mobile.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./pics/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <header>
+        <ul>
+          <li><a href="#apresentacao">Apresentação</a></li>
+          <li><a href="#skills-section">Tecnologias</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><button onclick="downloadPDF()">Baixar Currículo</button></li>
+        </ul>
+      </header>
+    </nav>
+
+    <main>
+      <section id="apresentacao" class="apresentacao">
+        <div class="content">
+          <div class="text">
+            <h1>Matheus Trujillo de Oliveira</h1>
+            <h4>Desenvolvedor Front-End | HTML | CSS | JavaScript</h4>
+            <p>
+              Sou um entusiasta da tecnologia, atualmente trabalhando no setor
+              comercial. Meu objetivo é fazer a transição para a área de
+              desenvolvimento, onde acredito na disciplina e esforço como
+              pilares do sucesso.
+            </p>
+            <p>
+              Meu objetivo é fazer a transição para a área de desenvolvimento,
+              onde acredito que disciplina, esforço e inovação são pilares do
+              sucesso. Busco constantemente novos desafios que me permitam
+              crescer profissionalmente e aplicar minhas habilidades analíticas
+              e paixão pela tecnologia de maneira impactante.
+            </p>
+            <p>
+              Se você procura um profissional dedicado, com expertise em análise
+              de dados e um compromisso inabalável com a excelência, estou
+              pronto para contribuir significativamente e agregar valor à sua
+              equipe.
+            </p>
+          </div>
+          <div class="profile">
+            <img
+              src="./pics/IMG_7830.jpeg"
+              alt="Foto de perfil de Matheus Trujillo"
+            />
+            <div class="social-medias">
+              <a href="https://github.com/MatheusTrujillo" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/matheustrujillo"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills-section" class="skills-section">
+        <h1>Tecnologias</h1>
+        <div class="skills">
+          <div class="skill">
+            <h2>HTML</h2>
+            <img src="./pics/./html-logo.svg" alt="HTML Logo" />
+          </div>
+          <div class="skill">
+            <h2>CSS</h2>
+            <img src="./pics/icons8-css-logo.svg" alt="CSS Logo" />
+          </div>
+          <div class="skill">
+            <h2>JavaScript</h2>
+            <img src="./pics/./icons8-javascript.svg" alt="JavaScript Logo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="projetos">
+        <h1 class="projetos__title">Projetos</h1>
+        <div class="gerador__projeto">
+          <a
+            href="https://github.com/MatheusTrujillo/GeradorDeMensagens"
+            target="_blank"
+            ><h2>Gerador de mensagens</h2></a
+          >
+        </div>
+        <img
+          class="projeto__imagem"
+          src="./pics/MOCKUP.png"
+          alt="mockup do projeto"
+        />
+      </section>
+
+      <section id="contato" class="contato">
+        <h1 class="contato__title">Entrar em contato</h1>
+        <form class="form__port">
+          <button onclick="enviarEmail()" class="contato__btn">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Enviar email</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <button onclick="scrollToTop()" id="btnTopo">&#8593;</button>
+
+    <footer class="footer-content">
+      <h1>Desenvolvido por Matheus Trujillo de Oliveira&reg; - 2024</h1>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
